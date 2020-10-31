@@ -32,22 +32,8 @@ class _MLKitState extends State<MLKit> {
 
     for (TextBlock block in visionText.blocks) {
       texttoprint.add(block.text.toString());
-      // for (TextLine line in block.lines) {
-        
-      //   // setState(() {
-      //   //   texttoprint.add(line.text.toString());
-      //   // });
-      //   // for (TextElement word in line.elements) {
-      //   //   // setState(() {
-      //   //   //   texttoprint.add(word.text.toString());
-      //   //   //   text = text + word.text + ' ';
-      //   //   // });
-      //   // }
-      //   // text = text + '\n';
-      // }
     }
     textRecognizer.close();
-    print(texttoprint);
     setState(() {
       text=true;
     });
